@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "instanta-waves-blocks/marquee",
+	"title": "Marquee",
+	"description": "Header marquee",
+	"category": "text",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"attributes": {
+		"heading": {
+			"type": "string",
+			"source": "html",
+			"selector": "span"
+		}
+	},
+	"supports": {
+		"color": {
+			"background": true,
+			"text": true
+		}
+	}
+}

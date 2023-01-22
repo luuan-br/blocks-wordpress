@@ -1,0 +1,35 @@
+.marquee {
+	height: 73px;
+	width: 100%;
+
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease;
+
+	.wrapper {
+		width: 100%;
+		max-width: 90vw;
+		position: relative;
+		height: 100%;
+		overflow: hidden;
+		margin: 0 auto;
+
+		div {
+			display: block;
+			width: 200%;
+			height: 100%;
+
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			overflow: hidden;
+
+			span {
+				float: left;
+				width: 50%;
+				font-size: 4.063rem;
+				font-weight: 600;
+			}
+		}
+	}
+}

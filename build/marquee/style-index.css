@@ -1,0 +1,56 @@
+/*!***********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/marquee/style.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************/
+.marquee {
+  height: 73px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.marquee .wrapper {
+  width: 100%;
+  max-width: 90vw;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.marquee .wrapper div {
+  display: block;
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  animation: marquee-rtl 5s linear infinite;
+}
+.marquee .wrapper div.reverse {
+  animation: marquee-ltr 5s linear infinite;
+}
+.marquee .wrapper div span {
+  float: left;
+  width: 50%;
+  font-size: 4.063rem;
+  font-weight: 600;
+}
+
+@keyframes marquee-rtl {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@keyframes marquee-ltr {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

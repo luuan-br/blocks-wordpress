@@ -1,0 +1,61 @@
+.marquee {
+	height: 73px;
+	width: 100%;
+
+	position: relative;
+	overflow: hidden;
+	transition: all .3s ease;
+
+	.wrapper {
+	  width: 100%;
+	  max-width: 90vw;
+	  position: relative;
+	  height: 100%;
+	  overflow: hidden;
+	  margin: 0 auto;
+
+	  div {
+		display: block;
+		width: 200%;
+		height: 100%;
+
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		overflow: hidden;
+
+		animation: marquee-rtl 5s linear infinite;
+
+		&.reverse {
+		  animation: marquee-ltr 5s linear infinite;
+		}
+
+		span {
+		  float: left;
+		  width: 50%;
+		  font-size: 4.063rem;
+		  font-weight: 600;
+		}
+	  }
+	}
+
+
+  }
+
+  @keyframes marquee-rtl {
+	0% {
+	  left: 0;
+	}
+	100% {
+	  left: -100%;
+	}
+  }
+
+  @keyframes marquee-ltr {
+	0% {
+	  left: -100%;
+	}
+	100% {
+	  left: 0;
+	}
+  }
