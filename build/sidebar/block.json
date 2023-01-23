@@ -1,0 +1,24 @@
+{
+  "apiVersion": 2,
+  "title": "Example: Controls (esnext)",
+  "icon": "universal-access-alt",
+  "category": "design",
+  "attributes": {
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": "p"
+    },
+    "alignment": {
+      "type": "string",
+      "default": "none"
+    }
+  },
+  "example": {
+    "attributes": {
+      "content": "Hello World",
+      "alignment": "right"
+    }
+  },
+  "editorScript": "file:./index.js"
+}
