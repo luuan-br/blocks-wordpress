@@ -19,5 +19,9 @@
 		"@wordpress/icons": "^9.16.0",
 		"@wordpress/plugins": "^5.2.0",
 		"@wordpress/scripts": "^25.2.0"
+	},
+	"dependencies": {
+		"@wordpress/compose": "^6.2.0",
+		"@wordpress/data": "^8.2.0"
 	}
 }
